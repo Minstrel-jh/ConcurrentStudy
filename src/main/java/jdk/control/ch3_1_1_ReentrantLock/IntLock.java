@@ -1,4 +1,4 @@
-package jdk.control.ReentrantLock;
+package jdk.control.ch3_1_1_ReentrantLock;
 
 import java.util.concurrent.locks.ReentrantLock;
 
