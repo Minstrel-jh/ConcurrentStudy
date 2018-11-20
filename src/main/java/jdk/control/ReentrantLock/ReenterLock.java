@@ -1,4 +1,4 @@
-package jdk.control.ch3_1_1_ReentrantLock;
+package jdk.control.ReentrantLock;
 
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -9,11 +9,11 @@ public class ReenterLock implements Runnable {
     @Override
     public void run() {
         for (int j = 0; j < 10000000; j++) {
-            //lock.lock();
+            lock.lock();
             try {
                 i++;
             } finally {
-                //lock.unlock();
+                lock.unlock();
             }
         }
     }
